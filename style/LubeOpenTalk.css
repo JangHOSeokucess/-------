@@ -11,8 +11,9 @@ body{
     margin: 0px;
     width: 1520px;
     font: 15px arial, helvetica, sans-serif;
-    background: #333;
-    z-index : -1;
+    z-index : -1; 
+    
+
 }
 li{
     list-style : none;
@@ -80,7 +81,7 @@ nav {
 .slider__container {
     position: relative;
     width: 1520px;
-    height: 6s00px;
+    height: 600px;
     margin: 0 auto;
     overflow: hidden;
     float : left;
@@ -195,13 +196,23 @@ nav {
     font-weight:bold;
     cursor:pointer;
 }
-.btn:hover{background:rgba(0,102,173,0.2); color:#0066ad;}
+.btn{background:rgba(0,102,173,0.2); color:#0066ad;}
 
 a{
     text-decoration: none;
     color: black;
 }
-
-#select_popup > h1:hover{
-    color: #0066ad;
+.btn{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    background-image: url(../html/keyimage/time.jpg);
+    background-size: cover;
+    width: 1520px;
+    height: 1200px;
+}
+div > h1{
+    color: yellow;
+    background-image: url(../html/keyimage/time.jpg);
+    background-size: cover;
 }
