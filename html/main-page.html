@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="../style/main-page.css">
+
+
+<script>
+    alert('J공방에 오신걸 환영합니다.');
+</script>
+<script>
+    var ul = document.getElementById("myList");
+    var lis = ul.getElementsByTagName("li");
+    
+    ul.addEventListener("mouseenter", function() {
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].style.textAlign = "left";
+    }
+    });
+    
+    ul.addEventListener("mouseleave", function() {
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].style.textAlign = "";
+    }
+    });
+</script>
+
+
+<body>
+    <header>
+        <div class="headerbox">
+            <h1>J의 키보드 공방</h1>
+        </div>
+    </header>
+    <aside >
+        
+    </aside>
+    <nav  class="nav-content">
+        <div class="menu">
+    <ul>
+    <li>
+        <a href="">Keyboard</a>
+        <ul id="myList">
+            <li>
+                <a href="#None">kbdfans</a><br>
+                <a href="#None">foxlab</a><br>
+                <a href="#None">wind</a><br>
+                <a href="#None">owlab</a><br>
+            </li>          
+        </ul>
+    </li>
+    <li>
+        <a href="#None">Accesory</a>
+        <ul id="myList">
+            <li>
+                <a href="">Keycap</a><br>
+                <a href="">Stabilizing</a><br>
+                <a href="">PCB</a><br>
+                <a href="">plate</a><br>
+            </li> 
+        </ul>
+    </li>
+    <li>
+        <a href="#None">contact  </a>   
+        <ul id="myList">
+            <li>
+                <a href="">supportcenter</a><br>
+                <a href="">number</a><br>
+            </li>
+        </ul>
+    </li>     
+    <li>
+        <a href="">Hand Lube working</a>
+        <ul id="myList">
+            <li>
+                <a href="">상담문의</a><br>
+                <a href="">빌드영상</a><br>
+                <a href="">윤활과정</a><br>
+            </li>
+        </ul>
+    </li>
+    </ul>
+        </div>     
+    </nav>
+    <div>
+        
+    </div>
+    
+        <section >
+            <div>
+                <img src="../html/키보드 이미지/foxlab Time 80 Reforged.jpg" alt="이미지1">
+                <img src="../html/키보드 이미지/사이버보드 (5).jpg" alt="이미지2">
+                <img src="../html/키보드 이미지/키컬트 (2) (1) (3).png" alt="이미지3" >
+            </div>
+            <div id="information">
+                <h1>출시 예정 키보드</h1>
+                <a href="https://fluxkeyboard.com/">Flux Keyboard</a><br>
+                <p>최초의 탈부착형 트레이 lcd 기반 패널 </p>
+                <a href="https://windstudio.store/collections/wind-z75">wind z75</a><br>
+                <p>두꺼운 배젤의 묵직한 타건감</p>
+                
+            </div>
+        </section>
+        
+<footer></footer>
+
+</body>
+</html>
