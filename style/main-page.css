@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding-left: 200px;
+    width: 1520px;
+    padding-right: 200px;
+    font: 21px arial, helvetica, sans-serif;
+    background: #333;
+    
+}
+
+
+.headerbox {
+    height: 120px;
+    width: 1520px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+nav {
+    
+    width: 1520px;
+    background-color: blue;
+}
+a {
+    color: #06c;
+}
+
+ul { /* 모든 목록... */
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 30px;
+}
+ul li{
+    margin-left: 70px;
+}
+
+li { /* 모든 목록 항목... */
+    display: inline; /* 목록 항목을 왼쪽에서 오른쪽으로 설정 */
+    position: relative; /* 위치 할 자식 상자의 원점을 설정 */
+    width: 100px;
+    
+}
+
+ul ul { /* 목록 내에 목록을 만든다... */
+    position: absolute; /* 모든 것의 위에 놓는다 */
+    left: 0; /* 상위 목록 항목을 왼쪽에 정렬 - 일부 과거버전의 브라우저에 필요  */
+    top: 100%; /* 부모 목록 항목의 맨 아래에 정렬하십시오. 이전 브라우저에서만 필요합니다. */
+    display: none; /* 숨겨라 */
+    
+}
+ul li ul li{
+    text-align: center;
+
+}
+
+li:hover ul { /* 목록 항목을 마우스로 가리키면 해당 항목에 포함 된 목록으로 이동... */
+    display: block; /* block 타입으로 보여라 */
+}
